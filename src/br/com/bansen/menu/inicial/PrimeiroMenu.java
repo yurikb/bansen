@@ -11,7 +11,6 @@ public class PrimeiroMenu {
 		int operacaoInicial = 0;
 
 		try {
-//			Operacoes operacoes = new Operacoes();
 			BufferedReader teclado = new BufferedReader(new InputStreamReader(System.in));
 			System.out.println("\n*******************************");
 			System.out.println("\n   BANSEN - Agência Bancária\n");
@@ -20,9 +19,7 @@ public class PrimeiroMenu {
 			System.out.println("1) Criação e população do banco de dados");
 			System.out.println("2) Acessar conta");
 			System.out.println("3) Sair do sistema");
-
 			operacaoInicial = Integer.parseInt(teclado.readLine());
-
 		} catch (IOException e) {
 			System.out.println(e.getMessage());
 		}
@@ -43,5 +40,4 @@ public class PrimeiroMenu {
 			}
 		} while (operacaoInicial != 3);
 	}
-
 }
